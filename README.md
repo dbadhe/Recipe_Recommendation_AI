@@ -6,7 +6,8 @@ This project implements a recipe recommendation system.
 
 ## What it does? 
 
-Given a list of ingredients provided by the user, the system suggests relevant recipes. It leverages Natural Language Processing (NLP) techniques for text cleaning and feature extraction, Topic Modeling (LDA) to understand recipe themes, and TF-IDF based similarity scoring to rank recipes matching the user's query. The system is built using Python and various data science libraries.
+Given a list of ingredients provided by the user, the system suggests relevant recipes. 
+It leverages Natural Language Processing (NLP) techniques for text cleaning and feature extraction, Topic Modeling (LDA) to understand recipe themes, and TF-IDF based similarity scoring to rank recipes matching the user's query.
 
 ## Data
 
@@ -25,7 +26,7 @@ The project follows these main steps:
 1.  **Data Loading and Cleaning (`Adding Data And Cleaning.ipynb`):**
     * Reads raw recipe data from JSON files.
     * Performs extensive cleaning: drops rows with missing ingredients/instructions, removes overly short recipes, eliminates punctuation, numbers, excess whitespace, and standard English stop words.
-    * Enriches the dataset by adding features like estimated cooking time, veg/non-veg labels, and cuisine type using tools like TextBlob and potentially LLMs (Transformers library imported).
+    * Enriches the dataset by adding features like estimated cooking time, veg/non-veg labels, and cuisine type using tools like TextBlob and LLMs.
     * Tokenizes and lemmatizes text data using libraries like NLTK and SpaCy.
 
 2.  **Modeling and Recommendation (`Recipe_Recommendation_Final.ipynb`):**
